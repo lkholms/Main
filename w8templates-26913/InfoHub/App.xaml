@@ -1,0 +1,44 @@
+﻿<!--
+ * WARNING this file is generated automatically
+ * The values for this file are in "AppHubViewModel.xml"
+ * Every time generation occurs the contents of this file are rewritten
+ * Any custom changes you make in this file will be lost upon generation
+ * 
+ * To invoke generation, right-click "AppHubViewModel.1.tt" and select "Run Custom Tool"
+ * To prevent generation, right-click "AppHubViewModel.1.tt" and select "Properties"
+ *    In the properties dialog, clear the value of "Custom Tool" to blank
+ *    
+ * Last generation: 4/8/2013 10:15:50 AM
+ -->
+
+<Application
+    x:Class="InfoHub.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InfoHub">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+
+				
+				<!-- custom styles -->
+                <ResourceDictionary Source="Styles/Sports/Shared.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/CalendarArticle.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/FlickrArticle.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/NewsArticle.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/TwitterArticle.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/WeatherArticle.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/YouTubeArticle.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/SummaryArticle.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/NewsArticle.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/AdvertArticle.xaml"/>
+                <ResourceDictionary Source="Styles/Sports/SnapView.xaml"/>
+
+				
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

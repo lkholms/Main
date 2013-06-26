@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root Theme="Sports">
+
+  <Colors>
+    <PrimaryColor>#FF001F52</PrimaryColor>
+    <PrimaryContrastColor>White</PrimaryContrastColor>
+    <SecondaryColor>#FFF05523</SecondaryColor>
+    <SecondaryContrastColor>White</SecondaryContrastColor>
+    <StartColor>White</StartColor>
+    <GroupHeaderColor>White</GroupHeaderColor>
+    <TitleColor>White</TitleColor>
+  </Colors>
+
+  <Title>Denver Broncos</Title>
+  <SubTitle>News, Photos, and More...</SubTitle>
+
+  <Summary Include="true">
+    <Title1>Denver</Title1>
+    <Title2>Broncos</Title2>
+    <Image>ms-appx:///Assets/SummaryImage.png</Image>
+    <More>http://en.wikipedia.org/wiki/Denver_Broncos</More>
+    <Facts>
+      <Fact>
+        <Line1>Home Field</Line1>
+        <Line2>Mile High Stadium, Denver, CO</Line2>
+      </Fact>
+      <Fact>
+        <Line1>Owner</Line1>
+        <Line2>Pat Bowlen</Line2>
+      </Fact>
+      <Fact>
+        <Line1>Executive Vice President</Line1>
+        <Line2>John Elway</Line2>
+      </Fact>
+      <Fact>
+        <Line1>Head Coach</Line1>
+        <Line2>John Fox</Line2>
+      </Fact>
+      <Fact>
+        <Line1>Last Super Bowl</Line1>
+        <Line2>1998 (v Atlanta)</Line2>
+      </Fact>
+      <Fact>
+        <Line1>Last Conference Championship</Line1>
+        <Line2>1998 (v Atlanta)</Line2>
+      </Fact>
+      <Fact>
+        <Line1>Last Playoff Appearance</Line1>
+        <Line2>2012 (v Baltimore)</Line2>
+      </Fact>
+    </Facts>
+  </Summary>
+
+  <Feeds>
+
+    <!--
+    * NEWS
+    * reference: mix feeds: http://chimpfeedr.com/
+    * reference: create a feed: http://www.feed43.com/
+    * example: http://www.denverbroncos.com/cda-web/rss-module.htm?tagName=News
+    * example: https://news.google.com/news/feeds?q=denver+broncos&amp;output=rss
+    * example: http://www.bing.com/news/search?q=denver+broncos&amp;format=RSS
+    -->
+    <News>
+      <Title>Recent News</Title>
+      <Source>http://www.bing.com/news/search?q=denver+broncos&amp;format=RSS</Source>
+      <More>http://www.denverbroncos.com/news-and-blogs/index.html</More>
+    </News>
+
+    <!--
+    * CALENDAR
+    * note: standard ics calendar only
+    -->
+    <Calendar>
+      <Title>Schedule</Title>
+      <Source>http://www.southendzone.com/ical/broncos.ics</Source>
+      <More>http://www.denverbroncos.com/schedule-and-events/schedule.html</More>
+    </Calendar>
+
+    <!--
+    * FLICKR FEED
+    * resource: http://www.flickr.com/services/feeds/docs/photos_public/
+    * example: user feed: http://api.flickr.com/services/feeds/photos_public.gne?id=36140829@N03&amp;lang=en-us&amp;format=rss_200
+    * note: for a single user, look at the bottom of their photostream page for the rss button
+    * example: search term feed: "http://api.flickr.com/services/feeds/photos_public.gne?tags=Broncos&amp;tagmode=all&amp;format=rss2"
+    * example: search terms feed: "http://api.flickr.com/services/feeds/photos_public.gne?tags=Denver,Broncos&amp;tagmode=all&amp;format=rss2"
+    -->
+    <Flickr>
+      <Title>Popular Photos</Title>
+      <Source>http://api.flickr.com/services/feeds/photos_public.gne?tags=Denver,Broncos&amp;tagmode=all&amp;format=rss2</Source>
+      <More>http://www.flickr.com/search/?q=Denver%20Broncos</More>
+    </Flickr>
+
+    <!--
+    * TWITTER
+    * reference: https://dev.twitter.com/docs/api/1/get/statuses/user_timeline
+    * example: single user http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=jerrynixon
+    * example: search term http://search.twitter.com/search.rss?q=Broncos&amp;rpp=20
+    * example: search terms "http://search.twitter.com/search.rss?q=Denver%20Broncos&amp;rpp=20
+    -->
+    <Twitter>
+      <Title>Latest Tweets</Title>
+      <Source>http://search.twitter.com/search.rss?q=Denver%20Broncos&amp;rpp=20</Source>
+      <More>https://twitter.com/search?q=Denver%20Broncos</More>
+    </Twitter>
+
+    <!--
+    * YOUTUBE
+    * reference: https://gdata.youtube.com/demo/index.html
+    * example: channel feed: http://gdata.youtube.com/feeds/api/users/BRONCOPLANET/uploads
+    * example: user feed: http://gdata.youtube.com/feeds/base/videos?max-results=12&amp;alt=rss&amp;author=JERRYNIXON
+    * exmaple: search term feed: http://gdata.youtube.com/feeds/base/videos?alt=rss&amp;q=Broncos
+    * exmaple: search terms feed: http://gdata.youtube.com/feeds/base/videos?alt=rss&amp;q=Denver%20Broncos
+    -->
+    <YouTube>
+      <Title>Current Videos</Title>
+      <Source>http://gdata.youtube.com/feeds/base/videos?alt=rss&amp;q=Denver%20Broncos</Source>
+      <More>http://www.youtube.com/results?search_query=Denver%20Broncos</More>
+    </YouTube>
+
+    <!--
+    * WEATHER
+    * reference: get weather: http://forecast.weather.gov/
+    * reference: get lat/long: http://weather.gov/
+    * note: there cannot be more than 7 days
+    * note: this is for USA weather only
+    -->
+    <Weather>
+      <Title>Denver Weather</Title>
+      <Latitude>39.7d</Latitude>
+      <Longitude>-104.75d</Longitude>
+    </Weather>
+
+  </Feeds>
+
+  <Advertise Include="true">
+    <ApplicationId>43da88f7-2b36-46f3-81dd-0b043193e1c6</ApplicationId>
+    <AdUnitId>10067184</AdUnitId>
+  </Advertise>
+
+  <PrivacyPolicy Local="false">
+    <Title>Privacy Policy</Title>
+    <More>http://freeprivacypolicy.org/generic.php</More>
+  </PrivacyPolicy>
+
+</Root>
